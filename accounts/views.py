@@ -9,5 +9,5 @@ def signup(request):
             login(request, user)
             return redirect('/')
     else:
-        form=SignupForm()
+        form = SignupForm()
     return render(request, 'accounts/signup.html',{'form':form})
